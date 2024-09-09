@@ -24,8 +24,8 @@ try {
   console.log(error);
 }
 
-app.use("/api/user", userRoute);
-app.use("/api/message", messageRoute);
+app.use("/user", userRoute);
+app.use("/message", messageRoute);
 
 server.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);
