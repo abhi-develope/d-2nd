@@ -11,7 +11,7 @@ function useAllUsers() {
             setLoading(true)
             try {
                 const token = Cookies.get("jwt")
-                const response = await axios.get("http://localhost:3000/user/allusers", {
+                const response = await axios.get("https://d-2nd.onrender.com/user/allusers", {
                     credentials: "include",
                     headers:{
                         Authorization: `Bearer ${token}`

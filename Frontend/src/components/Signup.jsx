@@ -31,7 +31,7 @@ function Signup() {
             confirmPassword:data.confirmPassword,
         }
         // console.log(userInfo);
-       await axios.post("http://localhost:3000/user/signup", userInfo).then((response) => {
+       await axios.post("https://d-2nd.onrender.com/user/signup", userInfo).then((response) => {
             console.log(response.data);
             if(response.data){
 
